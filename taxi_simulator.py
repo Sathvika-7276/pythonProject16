@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical - Suggested Solution
+CP1404 Practical
 Taxi simulator
 """
 from prac_06.car import Car
