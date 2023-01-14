@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical - Suggested Solution
+CP1404 Practicals
 UnreliableCar class tests
 
 The point to an UnreliableCar is that it randomly does not always drive.
@@ -11,6 +11,7 @@ from prac_09.unreliable_car import UnreliableCar
 
 
 def main():
+
     """Test some UnreliableCars."""
 
     # create cars with different reliabilities
