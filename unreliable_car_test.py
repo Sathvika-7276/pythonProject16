@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical - Suggested Solution
+CP1404 Practical
 UnreliableCar class tests
 
 The point to an UnreliableCar is that it randomly does not always drive.
