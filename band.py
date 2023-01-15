@@ -1,19 +1,14 @@
 class Band:
+    """Band class"""
     def __init__(self, name=""):
         self.name = name
-        self.person = []
-        self.people_dictionary = {}
+        self.musicians = []
 
     def __str__(self):
-        return f"{self.name} ({str(self.person).lstrip('[').rstrip(']')})"
+        return f"{self.name} ({', '.join(str(musician) for musician in self.musicians)})"
 
     def add(self, musician):
-        self.people_dictionary[musician.name] = musician.instruments
-        self.person.append(f"{musician.name} ({musician.instruments})")
+        self.musicians.append(musician)
 
     def play(self):
-        for person in self.people_dictionary:
-            if not self.people_dictionary[person]:
-                print(f"{person} needs an instrument!")
-            else:
-                print(f"{person} is playing: {self.people_dictionary[person][0]}")
+        return '\n'.join(musician.play() for musician in self.musicians)
